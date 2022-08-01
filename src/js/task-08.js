@@ -6,7 +6,7 @@ function onFormSubmit(event) {
     elements: { email, password },
   } = event.currentTarget;
   if (email.value === '' || password.value === '') {
-    alert('!!! ВСЕ ПОЛЯ ДОЛЖНЫ БЫТЬ ЗАПОЛНЕНЫ !!!');
+    return alert('!!! ВСЕ ПОЛЯ ДОЛЖНЫ БЫТЬ ЗАПОЛНЕНЫ !!!');
   }
   console.log(`Email: ${email.value}, Password: ${password.value}`);
   event.currentTarget.reset();
